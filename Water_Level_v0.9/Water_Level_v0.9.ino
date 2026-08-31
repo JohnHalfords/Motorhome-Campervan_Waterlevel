@@ -86,20 +86,20 @@ void loop() {
   digitalWrite(intLed, LOW); // Power Led ON
 
 for (int i = 0; i < 5; i++) {
-
+  // Send triggersignal via ultrasoon
   digitalWrite(trigPin, LOW);
   delayMicroseconds(5);
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
 
-  duration = pulseIn(echoPin, HIGH);
+  duration = pulseIn(echoPin, HIGH); // Measure time from send to receive
 
-  measurements[i] = (duration * 0.034 / 2) + 1;
+  measurements[i] = (duration * 0.034 / 2) + 1; // Calculate from time to centimeters
   delay(50);
 }
 
-// Sort measurements
+// Filter/Sort measurements for stability
 for (int i = 0; i < 4; i++) {
   for (int j = i + 1; j < 5; j++) {
     if (measurements[j] < measurements[i]) {
@@ -109,8 +109,7 @@ for (int i = 0; i < 4; i++) {
     }
   }
 }
-
-// Median value
+// Median value is nr. 2 in the array, because of the sort
 volume = measurements[2];
 
 // Convert distance (still in cm) to liters
@@ -126,32 +125,38 @@ else if (volume >= MaxMeasureVolume) {
 else {
   volumeText = String(int(round(volume))) + " Ltr";
 }
-
+  // Display the volume in Ltr
   display.clearDisplay();
   display.setCursor(0, 6);
   display.print(volumeText);
   display.display();
 }
 
+// Sub for checking if the sleepbutton is pressed
 void checkSleepButton() {
   if (digitalRead(SleepButton) == LOW)
   {
     display.clearDisplay();
     display.setCursor(0, 6);
-    display.print(".......");
+    display.print("......."); // Show something so you know the button is pressed
     display.display();
 
     unsigned long start = millis();
+
+    // Loop while pressed
     while (digitalRead(SleepButton) == LOW)
     {
       delay(10);
     }
+
+    // After loop calculate how long it is pressed
     unsigned long pressduration = millis() - start;
-    if (pressduration >= Press2Sleep)
+
+    if (pressduration >= Press2Sleep) // If pressed long enough, Say "..Bye.." and goto Deep Sleep
     {
       display.clearDisplay();
       display.setCursor(0, 6);
-      display.print("Sleep..");
+      display.print("..Bye..");
       display.display();
       for (int count = 0; count <= 12; count++)
         {
@@ -169,7 +174,7 @@ void checkSleepButton() {
     {
       display.clearDisplay();
       display.setCursor(0, 6);
-      display.print("noSleep");
+      display.print("noSleep"); // If not pressed long enough, comeback after saying "noSleep"
       display.display();
       delay(1000);
     }
