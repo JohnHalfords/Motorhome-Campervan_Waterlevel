@@ -1,6 +1,6 @@
 
-#Motorhome/Campervan Water Level#
-###by John Halfords, the Netherlands###
+# Motorhome/Campervan Water Level #
+### by John Halfords, the Netherlands ###
 
 Thanks to IOT Projects Ideas
 (https://iotprojectsideas.com/waterproof-ultrasonic-sensor-with-arduino-to-measure-water-level/)      
