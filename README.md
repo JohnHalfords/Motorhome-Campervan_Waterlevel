@@ -1,5 +1,7 @@
 
-# Motorhome/Campervan Water Level, by John Halfords, the Netherlands
+# Motorhome/Campervan Water Level
+### by John Halfords, the Netherlands
+
 Thanks to IOT Projects Ideas
 (https://iotprojectsideas.com/waterproof-ultrasonic-sensor-with-arduino-to-measure-water-level/)      
 ---
@@ -22,21 +24,21 @@ https://nl.aliexpress.com/item/1005006365845676.html
 ![Schematic](/Schematic.png)
 
 * See Schematic.png
-### Display:
+*Display:*
 * VCC = 3.3V !!
 * SDA = D2
 * SCK or SCL = D1
-### Ultrasonic Sensor:
+*Ultrasonic Sensor:*
 * VCC = 5V
 * RX Trigger pin = D5 = GPIO14
 * TX Echo pin = D6 = GPIO12
-### Sleep
+*Sleep*
 * When connecting a USB-C plug, switch off the 5v is not simple in some cases
 * and you don't want to pull out you USB-C cable every time, I've made a sleep function
 * Long press = Sleep
 * The unit starts again with a hard reset
 * SleepButton = D7 = GPIO13 (See Schematic)
-### ESP8266
+*ESP8266*
 * Internal Led = D4
 * Reset switch = Pin RST to ground
 
