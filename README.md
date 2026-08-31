@@ -2,14 +2,20 @@
 # Motorhome/Campervan Water Level #  
 ### by John Halfords, the Netherlands ###  
 
-<p>Thanks to IOT Projects Ideas  
+<p>Thanks to IOT Projects Ideas<br>
 (https://iotprojectsideas.com/waterproof-ultrasonic-sensor-with-arduino-to-measure-water-level/)</p>  
+
 ---
+
 ### What's new:  
 * 0.9 First released version  
+
 ---
+
 ## Hardware  
+
 ---
+
 * CPU: ESP8266 Wemos D1 Mini Pro (V3.0.0)  
 https://nl.aliexpress.com/item/1005006246625522.html  
 
@@ -20,6 +26,7 @@ https://www.amazon.nl/dp/B0DDKXCCRH?ref=ppx_yo2ov_dt_b_fed_asin_title
 https://nl.aliexpress.com/item/1005006365845676.html  
 
 ## Connections
+
 ---
 ![Schematic](/Schematic.png)  
 
