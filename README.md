@@ -9,8 +9,7 @@
 
 ### What's new:  
 * 0.9 First released version  
-* 0.91 Also suitable for the RCWL-1670 and small changes
-* 0.92 Piezo speaker and alarm functions (set the amount of water you want to fill with the button, and the piezo speaker lets you know when to stop)
+* 0.92 Piezo speaker and alarm functions (set the amount of water you want to fill with the button, and the piezo speaker lets you know when to stop)  
 	Button Short press = alarm on (for example) 10 Ltr, press again 20 Ltr, etc  
 	Button Long press = sleep  
 ---
@@ -22,6 +21,9 @@ https://nl.aliexpress.com/item/1005006246625522.html
 
 * Ultrasonic Sensor: JSN-SR04T  
 https://www.amazon.nl/dp/B0DDKXCCRH?ref=ppx_yo2ov_dt_b_fed_asin_title 
+
+* Ultrasonic Sensor: RCWL-1670  
+https://www.tinytronics.nl/nl/sensoren/afstand/ultrasonische-sensor-rcwl-1670
 
 * Display: I2C OLED Display Module 0.91 Inch (SSD1306)  
 https://nl.aliexpress.com/item/1005006365845676.html  
