@@ -54,19 +54,19 @@ https://nl.aliexpress.com/item/1005006365845676.html
 
 ## Functions
 
-**Read waterlevel:**
+**Read waterlevel:**  
 The display will show you the currect waterlevel.  
 If your sensor has a dead zone you can set a MaxMeasureVolume constant. Every level within the deadzone will be displayed as what you set in the constant DisplayHighestValue.  
 The lowest waterlevels can be inacurate depending on your water tank and sensor. Therefore you set the constant MinMeasureVolume. Every level lower than this value will be displayed as what you set in the constant DisplayLowestValue.  
 
-**Sleep**
-When connecting a USB-C plug, switch off the 5v is not simple in some cases  
-and you don't want to pull out you USB-C cable every time, I've made a sleep function.  
+**Sleep**  
+When connecting a USB-C plug, switch off the 5v is not simple in some cases.  
+And you don't want to pull out you USB-C cable every time, So i've made a sleep function.  
 Button Long press = Sleep  
-The unit starts again with a hard reset.  
+The unit starts again with a hard reset. (Sometimes you need to press this twice)  
 SleepButton = D7 = GPIO13 (See Schematic)  
 
-**Set alarm**
+**Set alarm**  
 Short press of the button gives you the possibility to set an acoustic alarm via a Piezo speaker.  
 1st short press sets the alarm to the next ten above the current waterlevel.  
 Every following press the alarm will be set a step higher.  
