@@ -11,8 +11,8 @@
 * 0.9 First released version  
 * 0.91 Also suitable for the RCWL-1670 and small changes
 * 0.92 Piezo speaker and alarm functions (set the amount of water you want to fill with the button, and the piezo speaker lets you know when to stop)
-*      Button Short press = alarm on (for example) 10 Ltr, press again 20 Ltr, etc
-*      Button Long press = sleep
+* - -  Button Short press = alarm on (for example) 10 Ltr, press again 20 Ltr, etc
+* - -  Button Long press = sleep
 ---
 
 ## Hardware  
