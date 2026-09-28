@@ -2,6 +2,8 @@
 # Motorhome/Campervan Water Level #  
 ### by John Halfords, the Netherlands ###  
 
+<a href="https://github.com/JohnHalfords/Motorhome-Campervan_Waterlevel">For download, go to the Github page...</a>
+
 <p>Thanks to IOT Projects Ideas<br>
 (https://iotprojectsideas.com/waterproof-ultrasonic-sensor-with-arduino-to-measure-water-level/)</p>  
 
